@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>course registration</title>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td><label for="fname">First Name*</label></td>
+            <td>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="ex:tarun"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="sname">Surname*</label></td>
+            <td>
+              <input
+                type="text"
+                id="sname"
+                name="sname"
+                placeholder="ex:barigela"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tel">Mobile Number*</label></td>
+            <td>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                required
+                placeholder="2983938273"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email*</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password*</label></td>
+            <td>
+              <input type="password" id="password" name="password" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cpassword">Confirm Password*</label></td>
+            <td>
+              <input type="password" id="cpassword" name="cpassword" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td><input type="date" id="dob" name="dob" required /></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="number" id="age" name="age" required /></td>
+          </tr>
+          <tr>
+            <td><label for="g">Gender</label></td>
+            <td>
+              <input type="radio" id="g" name="g" checked required />
+              <span>MALE</span>
+              <input type="radio" id="g" name="g" required />
+              <span>FEMALE</span>
+              <input type="radio" id="g" name="g" required />
+              <span>OTHERs</span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+              <select name="country" id="country" required>
+                <option value="none" disabled selected>--select--</option>
+                <option value="ind">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="resume">Upload Resume*</label></td>
+            <td><input type="file" id="resume" name="resume" required /></td>
+          </tr>
+          <tr>
+            <td><label for="address">Address</label></td>
+            <td>
+              <textarea
+                name="address"
+                id="address"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Information</legend>
+        <table>
+          <tr>
+            <td><label for="course">Course selection</label></td>
+            <td>
+              <select name="course" id="course" required>
+                <option value="none" disabled selected>--select--</option>
+                <option value="java">Java-full stack</option>
+                <option value="python">Python-full stack</option>
+                <option value="datascience">Data Science</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mode">Mode of Learning</label></td>
+            <td>
+              <input
+                type="radio"
+                id="mode"
+                name="mode"
+                value="online"
+                required
+              />
+              <span>Online</span>
+              <input
+                type="radio"
+                id="mode"
+                name="mode"
+                value="offline"
+                required
+              />
+              <span>Offline</span>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="reset" value="reset" /></td>
+            <td><input type="submit" value="submit" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
