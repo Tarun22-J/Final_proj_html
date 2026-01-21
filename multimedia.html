@@ -5,30 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multi media blog</title>
     <link rel="icon" href="/icon.jpg" />
+    <link rel="stylesheet" href="./style1.css" />
   </head>
   <body>
-    <h1>Welcome to My Multimedia Blog &trade;</h1>
-    <h2>My songs 🎧</h2>
-    <h3>Song 1: Sahiba</h3>
-    <img height="100" width="100" src="./sng1.jpg" alt="Sahiba" />
-    <audio src="./song1.mp3" controls></audio>
-    <h3>Song 2: Boom Boom</h3>
-    <img height="100" width="100" src="./sng2.jpg" alt="Boom Boom" />
-    <audio src="./song2.mp3" controls></audio>
-    <h3>Song 3: Power house</h3>
-    <img height="100" width="100" src="./sng3.jpg" alt="Power house" />
-    <audio src="./song3.mp3" controls></audio>
-    <hr />
-    <h2>Top upcoming movie <del>Teasers</del> 🎬</h2>
-    <h3>Teaser 1: <ins>Varanasi</ins></h3>
-    <img height="200" width="150" src="./poster1.jpg" alt="Varanasi" />
-    <video
-      poster="./poster1(1).jpg"
-      width="400"
+    <h1 class="main_h">My Multimedia Blog &trade;</h1>
+    <h2 class="sidebar">My songs 🎧</h2>
+    <h3 class="songs">Song 1: Sahiba</h3>
+    <img class="simg" height="200" width="200" src="./sng1.jpg" alt="Sahiba" />
+    <audio class="audio" src="./song1.mp3" controls></audio>
+    <h3 class="songs">Song 2: Boom Boom</h3>
+    <img
+      class="simg"
       height="200"
-      controls
-      src="./videoplayback.mp4"
-    ></video>
+      width="200"
+      src="./sng2.jpg"
+      alt="Boom Boom"
+    />
+    <audio class="audio" src="./song2.mp3" controls></audio>
+    <h3 class="songs">Song 3: Power house</h3>
+    <img
+      class="simg"
+      height="200"
+      width="200"
+      src="./sng3.jpg"
+      alt="Power house"
+    />
+    <audio class="audio" src="./song3.mp3" controls></audio>
+    <hr />
+    <h2 class="sidebar">Top upcoming movie <del>Teasers</del> 🎬</h2>
+    <h3>Teaser 1: <ins>Varanasi</ins></h3>
+    <div class="container">
+      <img height="200" width="150" src="./poster1.jpg" alt="Varanasi" />
+      <video
+        poster="./poster1(1).jpg"
+        width="400"
+        height="200"
+        controls
+        src="./videoplayback.mp4"
+      ></video>
+    </div>
     <p>
       <strong>Varanasi</strong> is an upcoming Indian Telugu-language epic
       action-adventure film <mark>directed by S. S. Rajamouli</mark>, who
@@ -46,14 +61,16 @@
       to become one of the most expensive Indian films ever made.
     </p>
     <h3>Teaser 2: <ins>Paradise</ins></h3>
-    <img height="200" width="150" src="./poster3(1).jpg" alt="Paradise" />
-    <video
-      width="400"
-      height="200"
-      controls
-      src="./videoplayback (2).mp4"
-      poster="./poster3.jpg"
-    ></video>
+    <div class="container">
+      <img height="200" width="150" src="./poster3(1).jpg" alt="Paradise" />
+      <video
+        width="400"
+        height="200"
+        controls
+        src="./videoplayback (2).mp4"
+        poster="./poster3.jpg"
+      ></video>
+    </div>
     <p>
       <strong>Paradise</strong> is an upcoming telugu movie
       <mark>directed by Srikanth Odela</mark>. story is reportedly based on true
@@ -65,14 +82,16 @@
       epic struggle for survival and freedom.
     </p>
     <h3>Teaser 3: <ins>Dacoit</ins></h3>
-    <img height="200" width="150" src="./poster2.jpg" alt="Dacoit" />
-    <video
-      width="400"
-      height="200"
-      controls
-      src="./videoplayback (1).mp4"
-      poster="./poster2(1).jpg"
-    ></video>
+    <div class="container">
+      <img height="200" width="150" src="./poster2.jpg" alt="Dacoit" />
+      <video
+        width="400"
+        height="200"
+        controls
+        src="./videoplayback (1).mp4"
+        poster="./poster2(1).jpg"
+      ></video>
+    </div>
     <pre>
       The narrative centers on an angry convict (played by Adivi Sesh) seeking
       vengeance against his former girlfriend (played by Mrunal Thakur) who he
