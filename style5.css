@@ -1,0 +1,77 @@
+body {
+  background-color: #202224;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+
+.schedule {
+  width: 90%;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+.schedule:hover {
+  box-shadow: 1px -19px 100px rgba(93, 39, 219, 0.863);
+  transform: scale(1.02);
+}
+.schedule__caption {
+  background-color: #5b4b8a;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.schedule__head > tr > th {
+  background-color: #2d3250;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 15px;
+}
+
+.schedule__body th,
+.schedule__body td {
+  padding: 11px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #d6dbea;
+}
+
+.schedule__body th.day {
+  background-color: #76809cab;
+  color: #2d3250;
+  font-weight: 600;
+  border: 1pt solid white;
+}
+td {
+  background-color: hsl(210, 89%, 57%);
+  border: 1pt solid white;
+}
+td[rowspan] {
+  background-color: #ffe5b4;
+  color: #8a4b00;
+  font-weight: bold;
+  border: 1px solid #d6dbea;
+}
+td.project,
+td[colspan] {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+.note-row td {
+  background-color: #f0fdf4;
+  color: #065f46;
+  padding: 14px;
+  font-size: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.note-row strong {
+  color: #14532d;
+}

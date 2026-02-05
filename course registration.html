@@ -3,163 +3,286 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>course registration</title>
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="./style4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Course Registration Form</h1>
-    <form action="">
-      <fieldset>
-        <legend>Personal Information</legend>
-        <table>
-          <tr>
-            <td><label for="fname">First Name*</label></td>
-            <td>
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                placeholder="ex:tarun"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="sname">Surname*</label></td>
-            <td>
-              <input
-                type="text"
-                id="sname"
-                name="sname"
-                placeholder="ex:barigela"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="tel">Mobile Number*</label></td>
-            <td>
-              <input
-                type="tel"
-                id="tel"
-                name="tel"
-                required
-                placeholder="2983938273"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="email">Email*</label></td>
-            <td>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="example@gmail.com"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="password">Password*</label></td>
-            <td>
-              <input type="password" id="password" name="password" required />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="cpassword">Confirm Password*</label></td>
-            <td>
-              <input type="password" id="cpassword" name="cpassword" required />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="dob">Date of Birth</label></td>
-            <td><input type="date" id="dob" name="dob" required /></td>
-          </tr>
-          <tr>
-            <td><label for="age">Age</label></td>
-            <td><input type="number" id="age" name="age" required /></td>
-          </tr>
-          <tr>
-            <td><label for="g">Gender</label></td>
-            <td>
-              <input type="radio" id="g" name="g" checked required />
-              <span>MALE</span>
-              <input type="radio" id="g" name="g" required />
-              <span>FEMALE</span>
-              <input type="radio" id="g" name="g" required />
-              <span>OTHERs</span>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="country">Country</label></td>
-            <td>
-              <select name="country" id="country" required>
-                <option value="none" disabled selected>--select--</option>
-                <option value="ind">India</option>
-                <option value="usa">USA</option>
-                <option value="uk">UK</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="resume">Upload Resume*</label></td>
-            <td><input type="file" id="resume" name="resume" required /></td>
-          </tr>
-          <tr>
-            <td><label for="address">Address</label></td>
-            <td>
-              <textarea
-                name="address"
-                id="address"
-                cols="30"
-                rows="5"
-                required
-              ></textarea>
-            </td>
-          </tr>
-        </table>
-      </fieldset>
-      <fieldset>
-        <legend>Course Information</legend>
-        <table>
-          <tr>
-            <td><label for="course">Course selection</label></td>
-            <td>
-              <select name="course" id="course" required>
-                <option value="none" disabled selected>--select--</option>
-                <option value="java">Java-full stack</option>
-                <option value="python">Python-full stack</option>
-                <option value="datascience">Data Science</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td><label for="mode">Mode of Learning</label></td>
-            <td>
-              <input
-                type="radio"
-                id="mode"
-                name="mode"
-                value="online"
-                required
-              />
-              <span>Online</span>
-              <input
-                type="radio"
-                id="mode"
-                name="mode"
-                value="offline"
-                required
-              />
-              <span>Offline</span>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="reset" value="reset" /></td>
-            <td><input type="submit" value="submit" /></td>
-          </tr>
-        </table>
-      </fieldset>
-    </form>
+    <div class="form-container">
+      <h1 class="main-heading">Course Registration Form</h1>
+      <form action="" class="registration-form">
+        <fieldset class="form-section personal-info">
+          <legend class="section-legend">Personal Information</legend>
+          <table class="form-table">
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="fname" class="form-label">First Name*</label>
+              </td>
+              <td class="input-cell">
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  class="text-input"
+                  placeholder="ex: tarun"
+                  required
+                />
+                <p>Enter your first name</p>
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="sname" class="form-label">Surname</label>
+              </td>
+              <td class="input-cell">
+                <input
+                  type="text"
+                  id="sname"
+                  name="sname"
+                  class="text-input"
+                  placeholder="ex: barigela"
+                  required
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="tel" class="form-label">Mobile Number*</label>
+              </td>
+              <td class="input-cell">
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  class="text-input"
+                  required
+                  placeholder="2983938273"
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="email" class="form-label">Email*</label>
+              </td>
+              <td class="input-cell">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="text-input"
+                  required
+                  placeholder="example@gmail.com"
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="password" class="form-label">Password*</label>
+              </td>
+              <td class="input-cell">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="text-input password-field"
+                  required
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="cpassword" class="form-label"
+                  >Confirm Password</label
+                >
+              </td>
+              <td class="input-cell">
+                <input
+                  type="password"
+                  id="cpassword"
+                  name="cpassword"
+                  class="text-input password-field"
+                  required
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="dob" class="form-label">Date of Birth</label>
+              </td>
+              <td class="input-cell">
+                <input
+                  type="date"
+                  id="dob"
+                  name="dob"
+                  class="text-input date-input"
+                  required
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="age" class="form-label">Age</label>
+              </td>
+              <td class="input-cell">
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  class="text-input number-input"
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label class="form-label">Gender</label>
+              </td>
+              <td class="input-cell radio-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    class="radio-input"
+                    checked
+                  />
+                  <span class="radio-text">Male</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    class="radio-input"
+                    required
+                  />
+                  <span class="radio-text">Female</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="other"
+                    class="radio-input"
+                    required
+                  />
+                  <span class="radio-text">Others</span>
+                </label>
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="country" class="form-label">Country</label>
+              </td>
+              <td class="input-cell">
+                <select
+                  name="country"
+                  id="country"
+                  class="select-input"
+                  required
+                >
+                  <option value="" disabled selected>--Select Country--</option>
+                  <option value="ind">India</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="resume" class="form-label">Upload Resume*</label>
+              </td>
+              <td class="input-cell">
+                <input
+                  type="file"
+                  id="resume"
+                  name="resume"
+                  class="file-input"
+                  required
+                />
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="address" class="form-label">Address</label>
+              </td>
+              <td class="input-cell">
+                <textarea
+                  name="address"
+                  id="address"
+                  cols="30"
+                  rows="5"
+                  class="textarea-input"
+                  placeholder="Enter your complete address..."
+                  required
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset class="form-section course-info">
+          <legend class="section-legend">Course Information</legend>
+          <table class="form-table">
+            <tr class="form-row">
+              <td class="label-cell">
+                <label for="course" class="form-label">Course Selection*</label>
+              </td>
+              <td class="input-cell">
+                <select name="course" id="course" class="select-input" required>
+                  <option value="" disabled selected>--Select Course--</option>
+                  <option value="java">Java Full Stack</option>
+                  <option value="python">Python Full Stack</option>
+                  <option value="datascience">Data Science</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="form-row">
+              <td class="label-cell">
+                <label class="form-label">Mode of Learning</label>
+              </td>
+              <td class="input-cell radio-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="mode"
+                    value="online"
+                    class="radio-input"
+                    required
+                  />
+                  <span class="radio-text">Online</span>
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="mode"
+                    value="offline"
+                    class="radio-input"
+                    required
+                  />
+                  <span class="radio-text">Offline</span>
+                </label>
+              </td>
+            </tr>
+            <tr class="form-row button-row">
+              <td class="button-cell">
+                <input type="reset" value="Reset Form" class="btn btn-reset" />
+              </td>
+              <td class="button-cell">
+                <input
+                  type="submit"
+                  value="Submit Registration"
+                  class="btn btn-submit"
+                />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
